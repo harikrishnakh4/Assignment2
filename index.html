@@ -4,93 +4,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Port Folio</title>
 </head>
 
 <body>
+    <!-- header started -->
     <header>
         <h1>Harikrishna</h1>
-
-        <nav>
-            <ul>
-                <li><a href="#About">About</a></li>
-                <li><a href="#Education">Education</a></li>
-                <li><a href="#Skills">Skills</a></li>
-                <li><a href="#Experience">Experience</a></li>
-                <li><a href="#Projects">Projects</a></li>
-                <li><a href="#Contact">Contact</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <section>
-        <h2>About Me</h2>
-        <p>Hey there!!! It's me Harikrishna, working as a Senior Systems Engineer at Infosys,
-            Trivandrum. I am currently upskilling in full stack development for transition into a
-            developer role.</p>
-
-        <img src="https://share.google/i5IcybizyPzFN7F4r" alt="Profile picture" length='200' width="100">
-    </section>
-
-    <section>
-        <h2>Education</h2>
+    <nav>
         <ul>
-            <li>Schooling : M M NSS English Medium School, Puthenvelikara.</li>
-            <li>Higher Secondary : VCS Higher Secondary School, Puthenvelikara.</li>
-            <li>Graduation : Civil Engineering at College of Engineering, Aranmula.</li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-    </section>
+    </nav>
+    <!-- header ended -->
 
-    <section>
-        <h2>Skills</h2>
-        <ul>
-            <li>AutoCAD</li>
-            <li>HTML</li>
-        </ul>
-    </section>
+    <!-- main started -->
+    <main>
+        <!-- image section started -->
+        <figure>
+            <img src="https://t4.ftcdn.net/jpg/11/66/06/77/360_F_1166067709_2SooAuPWXp20XkGev7oOT7nuK1VThCsN.jpg"
+                alt="Profile picture" length="150px" width="130px">
+        </figure>
+        <!-- image section ended -->
 
-    <section>
-        <h2>Experience</h2>
-            <span>Civil Engineer at GS Infrastructure, Thripunithura(2021-2022)</span>
-            <span>Systems Engineer at Infosys, Trivandrum (2022 - present)</span>
-    </section>
+        <!-- about section started -->
+        <section id="about">
+            <article>
+                <h2>About Me</h2>
+                <p>Hey there!!! It's me Harikrishna, working as a Senior Systems Engineer at Infosys, Trivandrum.
+                    I am currently upskilling in full stack development for transition into a developer role.</p>
+            </article>
+        </section>
+        <!-- about section ended -->
 
-    <section>
-        <h2>Projects</h2>
-        <article>
-            <li>Portfolio</li>
-            <p>I have done a portfolio website as a part of course -
-                Full Stack Development on Entri platform
-            </p>
-        </article>
-    </section>
+        <!-- education section started -->
+        <section id="education">
+            <article>
+                <h2>Education</h2>
+                <ul>
+                    <li>Schooling : M M NSS English Medium School, Puthenvelikara.</li>
+                    <li>Higher Secondary : VCS Higher Secondary School, Puthenvelikara.</li>
+                    <li>Graduation : Civil Engineering at College of Engineering, Aranmula.</li>
+                </ul>
+            </article>
+        </section>
+        <!-- education section ended -->
 
-    <section>
-        <h2>Contact</h2>
-        <form>
-            <div>
-                <label>Name</label>
-                <input type="text" placeholder="First Name" required name="Name">
+        <!-- skills section started -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>AutoCAD</li>
+                <li>HTML</li>
+            </ul>
+        </section>
+        <!-- skills section ended -->
 
-                <label>Email</label>
-                <input type="email" placeholder="email" name="email">
+        <!-- experience section started -->
+        <section id="experience">
+            <h2>Experience</h2>
+            <article>
+                <ul>
+                    <li><span>Civil Engineer</span> at GS Infrastructure, Thripunithura(2021-2022)</li>
+                    <li><span>Systems Engineer</span> at Infosys, Trivandrum (2022 - present)</li>
+                </ul>
+            </article>
+        </section>
+        <!-- experience section ended -->
 
-                <label>Subject</label>
-                <input type="text" placeholder="subject" name="Subject">
+        <!-- project section started -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <p><span>Portfolio</span> <br> I have done a portfolio website as a part of course - Full Stack Development
+                on Entri platform.</p>
+        </section>
+        <!-- Project section ended -->
 
-                <label>Message</label>
-                <input type="text" placeholder="type any message" name="Message">
+        <!-- contact form section started -->
+        <section id="contact">
+            <article>
+                <Form>
+                    <h2>Contact</h2>
 
-                <input type="submit">
+                    <label for="name">Name : </label>
+                    <input type="text" id="name" placeholder="enter your name" required>
+                    <br> <br>
+                    <label for="email">Email : </label>
+                    <input type="email" id="email" placeholder="enter you email id" required>
+                    <br> <br>
+                    <label for="subject">Subject :</label>
+                    <input type="text" id="subject" placeholder="enter your subject" required>
+                    <br> <br>
+                    <label for="message">Message :</label>
+                    <textarea name="message" id="message" rows="4" placeholder="enter your message"></textarea>
+                    <br>
+                    <button>Submit</button>
+                    <br> <br>
+                </Form>
+            </article>
+        </section>
+        <!-- contact form section ended -->
 
+    </main>
+    <!-- main ended -->
 
-            </div>
-        </form>
-    </section>
-
+    <!-- footer started -->
     <footer>
-        © 2026 Harikrishna. All rights reserved.
+        &copy; 2026 Harikrishna. All rights reserved.
     </footer>
+    <!-- footer ended -->
+
 </body>
 
 </html>
